@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        /* Ajustes adicionales para contacto y footer */
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+        .contact-info p i {
+            margin-right: 10px;
+            font-size: 1.5rem;
+            color: #0d6efd;
+        }
+
+        /* Texto justificado */
+        p {
+            text-align: justify;
+        }
+
+        /* Estilos para el carrusel */
+        .carousel-inner img {
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .carousel {
+            max-width: 80%;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        /* Estilos para el footer */
+        .footer-white {
+            background-color: #fff;
+            border-top: 1px solid #eaeaea;
+        }
+        .footer-links a {
+            color: #0d6efd;
+            font-size: 1.1rem;
+            margin-right: 20px;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover {
+            color: #0056b3;
+        }
+        .footer-logo img {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header: Con barra superior y menú inferior -->
+    <header class="header-container">
+        <!-- Barra superior fija con contacto -->
+        <div class="bg-primary text-light py-2 fixed-top">
+            <div class="container d-flex justify-content-between">
+                <span><i class="bi bi-telephone"></i> +123 456 7890</span>
+                <span><i class="bi bi-envelope"></i> contacto@constructora.com</span>
+            </div>
+        </div>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mt-5 shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo" height="40"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav4">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5">
+
+        <!-- Nosotros Section -->
+        <section id="nosotros" class="mb-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Nosotros</h2>
+                    <p>
+                        Somos una constructora con más de 20 años de experiencia en el mercado. Nos especializamos en la construcción de proyectos 
+                        residenciales y comerciales, ofreciendo siempre la mejor calidad y el compromiso con nuestros clientes. Nuestra misión es 
+                        transformar ideas en realidad, brindando soluciones innovadoras y sostenibles que marcan la diferencia en cada proyecto 
+                        que emprendemos.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets\nosotros.jpeg" alt="Constructora" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios Section -->
+        <section id="servicios" class="mb-5">
+            <h2 class="text-center mb-4">Nuestros Servicios</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Servicio 1 -->
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/Residential_Construction.png" class="card-img-top" alt="Servicio 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Construcción Residencial</h5>
+                            <p class="card-text">
+                                Ofrecemos servicios de construcción residencial, creando hogares cómodos, seguros y modernos, adaptados a las necesidades de cada cliente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/Commercial_Construction.jpeg" class="card-img-top" alt="Servicio 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Construcción Comercial</h5>
+                            <p class="card-text">
+                                Especializados en la construcción de espacios comerciales funcionales y estéticamente atractivos, ideales para cualquier tipo de negocio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/Remodeling.jpg" class="card-img-top" alt="Servicio 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Remodelaciones</h5>
+                            <p class="card-text">
+                                Transformamos espacios existentes en áreas renovadas y modernas, cumpliendo con los más altos estándares de calidad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nuevo Servicio 4: Remodelaciones y Ampliaciones -->
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/extension_of_existing_houses.jpeg" class="card-img-top" alt="Remodelaciones y Ampliaciones">
+                        <div class="card-body">
+                            <h5 class="card-title">Remodelaciones y Ampliaciones</h5>
+                            <p class="card-text">
+                                Renovación o ampliación de casas existentes, mejorando la funcionalidad o estética del hogar. Incluye cocinas, baños y más.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nuevo Servicio 5: Mantenimiento Residencial -->
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/roof_repair.jpeg" class="card-img-top" alt="Mantenimiento Residencial">
+                        <div class="card-body">
+                            <h5 class="card-title">Mantenimiento Residencial</h5>
+                            <p class="card-text">
+                                Servicios de mantenimiento preventivo y correctivo, como reparación de techos, instalaciones eléctricas, plomería y más.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nuevo Servicio 6: Instalaciones y Acabados -->
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/paint_and_flooring.png" class="card-img-top" alt="Instalaciones y Acabados">
+                        <div class="card-body">
+                            <h5 class="card-title">Instalaciones y Acabados</h5>
+                            <p class="card-text">
+                                Instalación de sistemas eléctricos, fontanería, calefacción y aire acondicionado. Acabados como pintura y pisos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nuevo Servicio 7: Diseño y Construcción de Jardines -->
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/garden_construction.jpg" class="card-img-top" alt="Diseño y Construcción de Jardines">
+                        <div class="card-body">
+                            <h5 class="card-title">Diseño y Construcción de Jardines</h5>
+                            <p class="card-text">
+                                Diseño y construcción de jardines o espacios exteriores para viviendas con áreas verdes o patios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nuevo Servicio 8: Adecuación de Oficinas -->
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/Adecuación_de_Oficinas.jpg" class="card-img-top" alt="Adecuación de Oficinas">
+                        <div class="card-body">
+                            <h5 class="card-title">Adecuación de Oficinas</h5>
+                            <p class="card-text">
+                                Adaptación de espacios comerciales para oficinas funcionales. Incluye cableado, aire acondicionado, mobiliario y acabados modernos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nuevo Servicio 9: Reformas Comerciales -->
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/Remodeling_of_premises.jpeg" class="card-img-top" alt="Reformas Comerciales">
+                        <div class="card-body">
+                            <h5 class="card-title">Reformas Comerciales</h5>
+                            <p class="card-text">
+                                Remodelación de locales o espacios comerciales para adaptarlos a nuevas necesidades del negocio o mejorar su imagen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuestro Trabajo Section -->
+        <section id="trabajo" class="mb-5">
+            <h2 class="text-center mb-4">Nuestro Trabajo</h2>
+            <div class="carousel slide" id="carouselTrabajo" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/Residential_Construction.png" class="d-block w-100" alt="Trabajo 1">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="assets/Commercial_Construction.jpeg" class="d-block w-100" alt="Trabajo 1">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="assets/Remodeling.jpg" class="d-block w-100" alt="Trabajo 1">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="assets/extension_of_existing_houses.jpeg" class="d-block w-100" alt="Trabajo 1">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="assets/roof_repair.jpeg" class="d-block w-100" alt="Trabajo 1">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="assets/Remodeling_of_premises.jpeg" class="d-block w-100" alt="Trabajo 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/Adecuación_de_Oficinas.jpg" class="d-block w-100" alt="Trabajo 2">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTrabajo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTrabajo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section id="contacto" class="mb-5">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-info">
+                        <p><i class="bi bi-geo-alt-fill"></i><strong>Dirección:</strong> Calle Falsa 123, Ciudad Ficticia</p>
+                        <p><i class="bi bi-telephone-fill"></i><strong>Teléfono:</strong> +123 456 7890</p>
+                        <p><i class="bi bi-envelope-fill"></i><strong>Correo Electrónico:</strong> contacto@constructora.com</p>
+                        <p><i class="bi bi-clock-fill"></i><strong>Horario de Oficina:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.6655502808694!2d-122.084249!3d37.422065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba73b5dbf55b%3A0xa0b40220a2f2e0f!2sGoogleplex!5e0!3m2!1sen!2sus!4v1591226566541!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-light text-center py-4">
+        <div class="footer-logo mb-3">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="footer-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
